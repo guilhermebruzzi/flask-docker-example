@@ -32,7 +32,7 @@ run_local:
 	FLASK_PORT=8080 python app/main.py
 
 logs:
-	eb logs santiago-dev
+	eb logs example-flask-dev
 
 deploy:
-	eb deploy santiago-dev
+	eb deploy example-flask-dev

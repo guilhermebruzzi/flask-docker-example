@@ -1,7 +1,9 @@
 FROM tiangolo/uwsgi-nginx-flask:flask
 
-WORKDIR app
+# WORKDIR app
+#
+# COPY * /app/app/
 
-COPY * /app/app/
+EXPOSE 80
 
-# COPY ./app /app
+COPY ./app /app

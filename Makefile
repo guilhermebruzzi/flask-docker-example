@@ -29,7 +29,7 @@ run:
 	docker run -i -t --rm -v "$$PWD/app:/app/app" -p 8080:80 guilhermebruzzi/exampleflask
 
 run_local:
-	FLASK_PORT=8080 python app/main.py
+	PORT=5000 python app/main.py
 
 logs:
 	eb logs example-flask-dev

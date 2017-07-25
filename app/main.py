@@ -2,8 +2,10 @@ import os
 from datetime import datetime
 
 from flask import Flask, jsonify, render_template_string, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # def render_template(path, **data):
 #     if not "debug" in data.keys():
